@@ -1,0 +1,57 @@
+[[language]]
+name = "rust"
+auto-format = true
+
+# If this doesn't work, you might be on a older release version which handles this differently.
+# Try using [language.config.check] instead of [language-server.rust-analyzer.config.check]
+[language-server.rust-analyzer.config.check]
+command = "clippy"
+
+# Config for pyright 
+# [[language]]
+# name = "python"
+# scope = "source.python"
+# injection-regex = "python"
+# file-types = ["py","pyi","py3","pyw","ptl",".pythonstartup",".pythonrc","SConstruct"]
+# shebangs = ["python"]
+# roots = ["setup.py", "setup.cfg", "pyproject.toml"]
+# comment-token = "#"
+# language-server = { command = "pyright-langserver", args = ["--stdio"] }
+# indent = { tab-width = 4, unit = "    " }
+# will get "Async jobs timed out" errors if this empty config is not added
+# config = {}
+
+# [language-server.pyright-langserver.config]
+# reportUnusedImport = true
+# strictParameterNoneValue = false
+
+# tie python files to pyright
+# this is simply replacing pylsp with pyright in master's languages.toml
+[[language]]
+name = "python"
+scope = "source.python"
+injection-regex = "python"
+file-types = ["py","pyi","py3","pyw","ptl",".pythonstartup",".pythonrc","SConstruct"]
+shebangs = ["python"]
+roots = ["setup.py", "setup.cfg", "pyproject.toml"]
+comment-token = "#"
+language-servers = [ "pyright" ]
+indent = { tab-width = 4, unit = "    " }
+
+# For Python Pyright LSP
+[language-server.pyright]
+command = "pyright-langserver"
+args = ["--stdio"]
+# will get "Async jobs timed out" errors if this empty config is not added
+config = {}
+
+[[language]]
+name = "go"
+scope = "source.go"
+injection-regex = "go"
+file-types = ["go"]
+roots = ["go.mod"]
+auto-format = true
+comment-token = "//"
+formatter = { command = "goimports" }
+indent = { tab-width = 4, unit = "\t" }
