@@ -55,4 +55,3 @@ map("n", "<Up>", "<Nop>", { noremap = true, silent = false })
 map("n", "<Down>", "<Nop>", { noremap = true, silent = false })
 map("n", "<Left>", "<Nop>", { noremap = true, silent = false })
 map("n", "<Right>", "<Nop>", { noremap = true, silent = false })
-

@@ -123,9 +123,6 @@ export PATH=$PATH:/usr/local/go/bin
 # For neovim appimage
 export PATH=$PATH:~/nvim
 
-# For helix runtime
-#HELIX_RUNTIME=/home/zvw/helix/runtime
-
 # For Kitty
 export PATH=$PATH:~/.local/kitty.app/bin
 
