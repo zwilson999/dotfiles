@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# Run picom
+picom -b --config ~/.config/picom/picom.conf
+
 # Terminate already running bar instances
 killall -q polybar &
 

@@ -114,25 +114,31 @@ fi
 . "$HOME/.cargo/env"
 
 # For zellij
-export PATH=$PATH:~/zellij
+export PATH=$PATH:/home/zvw/zellij
 
 # For golang
-export PATH=$PATH:~/go/bin
+export PATH=$PATH:/home/zvw/go/bin
 export PATH=$PATH:/usr/local/go/bin
 
 # For neovim appimage
-export PATH=$PATH:~/nvim
+export PATH=$PATH:/home/zvw/nvim
+
+# For helix runtime
+#HELIX_RUNTIME=/home/zvw/helix/runtime
 
 # For Kitty
-export PATH=$PATH:~/.local/kitty.app/bin
+export PATH=$PATH:/home/zvw/.local/kitty.app/bin
 
-[ -f "~/.ghcup/env" ] && source "~/.ghcup/env" # ghcup-env
+[ -f "/home/zvw/.ghcup/env" ] && source "/home/zvw/.ghcup/env" # ghcup-env
 
 # For cmake
 export PATH=$PATH:/opt/cmake/bin
 
 # For st32 cube IDE
 alias st32="/opt/st/stm32cubeide_1.14.0/stm32cubeide"
+
+# For st32 cube MX
+alias st32mx="/usr/local/STMicroelectronics/STM32Cube/STM32CubeMX/STM32CubeMX"
 
 # Custom bash prompt
 # Obtained from https://robotmoon.com/bash-prompt-generator/

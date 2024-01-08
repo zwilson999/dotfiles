@@ -32,6 +32,7 @@
   "toggleterm.nvim": { "branch": "main", "commit": "e3805fed94d487b81e9c21548535cc820f62f840" },
   "vim-eunuch": { "branch": "master", "commit": "67f3dd32b4dcd1c427085f42ff5f29c7adc645c6" },
   "vim-go": { "branch": "master", "commit": "dd45fb6cddccff1d34aa28ce3a0d3430d209001a" },
+  "vim-python-pep8-indent": { "branch": "master", "commit": "60ba5e11a61618c0344e2db190210145083c91f8" },
   "vscode.nvim": { "branch": "main", "commit": "39841d05ab4a5c03ea0985196b9f3dfa48d83411" },
   "which-key.nvim": { "branch": "main", "commit": "4433e5ec9a507e5097571ed55c02ea9658fb268a" }
 }

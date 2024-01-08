@@ -18,10 +18,10 @@ map("n", "<C-H>", "<C-W><C-H>", { noremap = true, silent = false })
 map("n", "<C-/>", ':call nerdcommenter#Comment("n", "toggle")<CR>', { noremap = true, silent = true })
 
 -- Insert closing braces after typing first
-map("i", "{<CR>", "{<CR><CR>}", { noremap = true, silent = true})
+map("i", "{<CR>", "{<CR>}<Esc>ko", { noremap = true, silent = true})
 
 -- Insert closing parens after typing first
-map("i", "(<CR>", "(<CR><CR>)", { noremap = true, silent = true})
+map("i", "(<CR>", "(<CR>)<Esc>ko", { noremap = true, silent = true})
 
 -- Barbar allows us to select buffer based on entry
 -- Move to prev/next
