@@ -55,3 +55,9 @@ map("n", "<Up>", "<Nop>", { noremap = true, silent = false })
 map("n", "<Down>", "<Nop>", { noremap = true, silent = false })
 map("n", "<Left>", "<Nop>", { noremap = true, silent = false })
 map("n", "<Right>", "<Nop>", { noremap = true, silent = false })
+
+-- make esc key easier
+map("i", "jj", "<Esc>", { noremap = true, silent = false })
+
+map("n", ";", ":", { noremap = true, silent = false })
+map("n", ":", ";", { noremap = true, silent = false })
