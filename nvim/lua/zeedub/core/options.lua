@@ -54,6 +54,9 @@ vim.opt.guifont = "JetBrainsMono Nerd Font Mono Bold 12"
 vim.opt.termguicolors = true
 vim.opt.background = "dark"
 
+-- Enable nord theme
+vim.cmd[[colorscheme nord]]
+
 -- Autocmd to negate auto comments when pressing <CR> to next line
 vim.api.nvim_create_autocmd(
         "FileType",

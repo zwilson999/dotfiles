@@ -37,7 +37,7 @@ return {
                 })
 
                 -- jdtls
-                lspconfig.jdtls.setup({})
+                -- lspconfig.jdtls.setup({})
 
         end,
 
