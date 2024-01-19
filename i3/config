@@ -51,10 +51,10 @@ floating_modifier $mod
 tiling_drag modifier titlebar
 
 # start a terminal
-bindsym $mod+Return exec --no-startup-id /home/zvw/.local/kitty.app/bin/kitty
+bindsym $mod+Return exec --no-startup-id st 
 
 # kill focused window
-bindsym $mod+q kill
+bindsym $mod+w kill
 
 # start dmenu (a program launcher)
 # bindsym $mod+d exec --no-startup-id dmenu_run
@@ -99,7 +99,7 @@ bindsym $mod+F12 fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
+bindsym $mod+y layout tabbed
 bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
@@ -195,19 +195,19 @@ bindsym $mod+r mode "resize"
 gaps inner 5 
 
 # Launch Chrome
-bindsym $mod+Shift+w exec --no-startup-id google-chrome 
+bindsym $mod+g exec --no-startup-id firefox 
 
 # Launch Thunderbird
 bindsym $mod+m exec --no-startup-id thunderbird
 
 # Launch ranger
-bindsym $mod+f exec --no-startup-id kitty -e ranger
+bindsym $mod+f exec --no-startup-id st -e ranger
 
 # Launch polybar at startup
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 # Set desktop
-exec --no-startup-id nitrogen --set-auto ~/Downloads/ALH3e4N.jpeg --head=0 && nitrogen --set-auto ~/Downloads/ALH3e4N.jpeg --head=1
+exec --no-startup-id nitrogen --set-auto ~/wallpapers/ALH3e4N.jpeg --head=0 && nitrogen --set-auto ~/wallpapers/ALH3e4N.jpeg --head=1
 
 #######
 #THEME#
