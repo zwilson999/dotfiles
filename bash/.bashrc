@@ -9,6 +9,9 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 
-# Custom bash color prompt
-export PS1="\[\e[38;5;33m\]\u\[\e[38;5;69m\]@\[\e[38;5;105m\]\h \[\e[38;5;141m\]\w \[\033[0m\]$ "
-. "$HOME/.cargo/env"
+#. "$HOME/.cargo/env"
+
+export PS1="\[$(tput setaf 85)\]\u\[$(tput setaf 85)\]@\[$(tput setaf 85)\]\h \[$(tput setaf 33)\]\w \[$(tput sgr0)\]$ "
+
+# For STM32CubeMX
+alias st32cube="~/STM32CubeMX/STM32CubeMX"
