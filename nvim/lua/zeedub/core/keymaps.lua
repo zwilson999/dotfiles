@@ -15,7 +15,7 @@ map("n", "<C-L>", "<C-W><C-L>", { noremap = true, silent = false })
 map("n", "<C-H>", "<C-W><C-H>", { noremap = true, silent = false })
 
 -- Nerd Commenter comment keybind
-map("n", "<C-/>", ':call nerdcommenter#Comment("n", "toggle")<CR>', { noremap = true, silent = true })
+--map("n", "<C-/>", ':call nerdcommenter#Comment("n", "toggle")<CR>', { noremap = true, silent = true })
 
 -- Insert closing braces after typing first
 map("i", "{<CR>", "{<CR>}<Esc>ko", { noremap = true, silent = true})

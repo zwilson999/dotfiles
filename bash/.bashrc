@@ -11,6 +11,7 @@ PS1='[\u@\h \W]\$ '
 
 #. "$HOME/.cargo/env"
 
+# Prompt color edit
 export PS1="\[$(tput setaf 85)\]\u\[$(tput setaf 85)\]@\[$(tput setaf 85)\]\h \[$(tput setaf 33)\]\w \[$(tput sgr0)\]$ "
 
 # For STM32CubeMX

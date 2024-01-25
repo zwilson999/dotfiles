@@ -10,7 +10,7 @@ vim.opt.splitbelow = true
 vim.opt.splitright = true
 
 -- Use clipboard for copy/paste
-vim.opt.clipboard = "unnamedplus"
+vim.opt.clipboard = "unnamed,unnamedplus"
 
 -- Add number lines to left hand side
 vim.opt.number = true
@@ -48,7 +48,7 @@ vim.opt.showmatch = true
 vim.opt.wildmode = "list:longest"
 
 -- Set fonts here
-vim.opt.guifont = "JetBrainsMono Nerd Font Mono Bold 12"
+vim.opt.guifont = "Hack Nerd Font Mono Bold 16"
 
 -- Follow the terminal guicolors if able to be read
 vim.opt.termguicolors = true
@@ -65,19 +65,19 @@ vim.api.nvim_create_autocmd(
 
 -- NERD COMMENTER Settings
 -- Create default comment mappings
-vim.g.NERDCreateDefaultMappings = "1"
+--vim.g.NERDCreateDefaultMappings = "1"
 
 -- Add spaces after comment delimiters by default
-vim.g.NERDSpaceDelims = "1"
+--vim.g.NERDSpaceDelims = "1"
 
 -- Use compact syntax for prettified multi-line comments
-vim.g.NERDCompactSexyComs = "1"
+--vim.g.NERDCompactSexyComs = "1"
 
 -- Align line-wise comment delims flush left instead of following code indentation
-vim.g.NERDDefaultAlign = "left"
+--vim.g.NERDDefaultAlign = "left"
 
 -- Enable trimming of trailing whitespace when uncommenting
-vim.g.NERDTrimTrailingWhitespace = "1"
+--vim.g.NERDTrimTrailingWhitespace = "1"
 
 -- Addtl gopls config
 vim.g.go_gopls_enalbed = "1"

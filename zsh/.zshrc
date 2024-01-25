@@ -7,7 +7,7 @@ zstyle :compinstall filename '~/.zshrc'
 autoload -Uz compinit promptinit
 compinit
 promptinit
-prompt walters
+# prompt walters
 
 # End of lines added by compinstall
 # Lines configured by zsh-newuser-install
@@ -20,7 +20,9 @@ bindkey -v
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 
-PS1='%F{#66ff99}%n@%m%f %F{#0066ff}%~%f % $ '
+
+# Prompt styling
+PS1='%F{#66ff99}%n@%m%f %F{#fca503}%~%f % $ '
 
 # For STM32CubeMX
 alias st32cube="~/STM32CubeMX/STM32CubeMX"

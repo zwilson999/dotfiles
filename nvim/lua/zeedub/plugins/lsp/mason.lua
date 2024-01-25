@@ -46,10 +46,10 @@ return {
 				{ "autopep8" },
 				{ "json-lsp" },
 				{ "prettier" },
-				{ "eslint_d" },
-				{ "eslint-lsp" },
+--				{ "eslint_d" },
+--				{ "eslint-lsp" },
 				{ "codelldb" },
-                { "jdtls" },
+--                { "jdtls" },
 			},
 
 			auto_update = true,

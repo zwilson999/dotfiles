@@ -12,15 +12,15 @@ return {
 			ignore = nil,
 			---LHS of toggle mappings in NORMAL mode
 			toggler = {
-				---Line-comment toggle keymap
-				line = "gcc",
+				---Line-comment toggle keymap for Ctrl + /
+				line = "<C-_>",
 				---Block-comment toggle keymap
 				block = "gbc",
 			},
 			---LHS of operator-pending mappings in NORMAL and VISUAL mode
 			opleader = {
-				---Line-comment keymap
-				line = "gc",
+				---Line-comment keymap for Ctrl + /
+				line = "<C-_>",
 				---Block-comment keymap
 				block = "gb",
 			},
