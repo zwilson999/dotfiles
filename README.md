@@ -2,13 +2,33 @@
 
 Configuration files for Linux. This currently includes:
 
-i3wm
-kitty
-nvim
-polybar
-ranger
-rofi
-helix
-bash
-picom
-wallpaper
+##### Shells
+bash/
+zsh/
+
+##### X11
+xorg/
+
+##### Window Managers and Bars
+i3/
+polybar/
+
+##### Terminal Related things 
+st/
+tmux/
+
+##### Modal editors (mostly Vim)
+nvim/
+gvim/
+helix/
+
+##### File managers
+ranger/
+rofi/
+
+##### Compositor
+picom/
+
+##### Wallpapers and Configs
+wallpaper/
+nitrogen/
