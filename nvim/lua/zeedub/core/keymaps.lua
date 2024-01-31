@@ -42,7 +42,7 @@ map("n", "<A-0>", "<Cmd>BufferLast<CR>", { silent = true })
 
 -- Will open a hover window for the function our cursor is over
 -- This will show documentation for the function
-map("n", "K", "<cmd> lua vim.lsp.buf.hover()<CR>", { silent = true })
+map("n", "<C-K>", "<cmd> lua vim.lsp.buf.hover()<CR>", { silent = true })
 
 -- fix common errors when typing capital letters by accident
 vim.api.nvim_create_user_command("WQ", "wq", {})
@@ -59,5 +59,10 @@ map("n", "<Right>", "<Nop>", { noremap = true, silent = false })
 -- make esc key easier
 map("i", "jj", "<Esc>", { noremap = true, silent = false })
 
+-- remap semicolon for command mode
 map("n", ";", ":", { noremap = true, silent = false })
 map("n", ":", ";", { noremap = true, silent = false })
+
+-- remap J and K to move faster on screen
+map("n", "K", "5k", { noremap = true, silent = false })
+map("n", "J", "5j", { noremap = true, silent = false })

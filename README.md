@@ -2,33 +2,33 @@
 
 Configuration files for Linux. This currently includes:
 
-##### Shells
-bash/
-zsh/
+#### Shells
+bash/ \ 
+zsh/  \
 
-##### X11
-xorg/
+#### X11
+xorg/ \
 
-##### Window Managers and Bars
-i3/
-polybar/
+#### Window Managers and Bars
+i3/ \
+polybar/ \
 
-##### Terminal Related things 
-st/
-tmux/
+#### Terminal Related things 
+st/ \
+tmux/ \
 
-##### Modal editors (mostly Vim)
-nvim/
-gvim/
-helix/
+#### Modal editors (mostly Vim)
+nvim/ \
+gvim/ \
+helix/ \
 
-##### File managers
-ranger/
-rofi/
+#### File managers
+ranger/ \
+rofi/ \ 
 
-##### Compositor
-picom/
+#### Compositor
+picom/ \
 
-##### Wallpapers and Configs
-wallpaper/
-nitrogen/
+#### Wallpapers and Configs
+wallpaper/ \
+nitrogen/ \
