@@ -35,6 +35,9 @@ call plug#begin()
         " For C
         Plug 'vim-scripts/c.vim'
 
+        " Gruvbox theme for gvim
+        Plug 'sainnhe/gruvbox-material'
+
 "Required
 call plug#end()
 
@@ -148,6 +151,7 @@ set history=100
 set t_Co=256
 set t_ut=
 set background=dark
+colorscheme gruvbox-material
 
 " Enable auto completion menu after pressing tab
 set wildmenu
@@ -192,7 +196,7 @@ nmap <F6> :NERDTreeToggle<CR>
 "set guifont=Fixedsys\ Excelsior\ 3.01-L2\ Mono\ 13
 "set guifont=Fixedsys\ Excelsior\ 16
 "set guifont=Source\ Code\ Pro\ 15
-set guifont=JetBrainsMono\ Nerd\ Font\ Mono\ Regular\ 13
+set guifont=Hack\ Nerd\ Font\ Mono\ Regular\ 13
 
 " Read ~/.NERDTreeBooksmarks file and takes its second column
 function! s:nerdtreeBookmarks()

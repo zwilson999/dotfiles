@@ -104,8 +104,8 @@ source $ZSH/oh-my-zsh.sh
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 
-# Prompt styling
-#PS1='%F{#66ff99}%n@%m%f %F{#d79921}%~%f % $ '
-
 # For STM32CubeMX
 alias st32cube="~/STM32CubeMX/STM32CubeMX"
+
+# Will allow blinking box in terminal
+echo '\e[1 q'

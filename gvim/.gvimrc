@@ -187,10 +187,7 @@ nmap <F6> :NERDTreeToggle<CR>
 " Fixedsys-like font
 " Download here: https://mega.nz/file/V9JTXKZJ#48OPvvFTR-dRI94AecWBoJAGOSGC-31UnIV2TpV45NU
 "set guifont=Fixedsys\ Excelsior\ 3.01-L2\ Mono\ Bold\ 13
-"set guifont=Fixedsys\ Excelsior\ 3.01-L2\ Mono\ 13
-"set guifont=Fixedsys\ Excelsior\ 16
-"set guifont=Source\ Code\ Pro\ 15
-set guifont=JetBrainsMono\ Nerd\ Font\ Mono\ Regular\ 13
+set guifont=Hack\ Nerd\ Font\ Mono\ Regular\ 13
 
 " Read ~/.NERDTreeBooksmarks file and takes its second column
 function! s:nerdtreeBookmarks()
