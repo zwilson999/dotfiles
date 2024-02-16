@@ -48,7 +48,7 @@ vim.opt.showmatch = true
 vim.opt.wildmode = "list:longest"
 
 -- Set fonts here
-vim.opt.guifont = "JetBrainsMono Nerd Font Mono 14"
+vim.opt.guifont = "JetBrainsMonoNL Nerd Font Mono 14"
 
 -- Follow the terminal guicolors if able to be read
 vim.opt.termguicolors = true
