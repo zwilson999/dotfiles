@@ -19,6 +19,7 @@ end
 lazy.setup({
 	-- importing directories
 	spec = {
+                { import = "zeedub.plugins.nvim-java" },
 		{ import = "zeedub.plugins" },
 		{ import = "zeedub.plugins.lsp" },
 	},

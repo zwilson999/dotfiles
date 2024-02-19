@@ -5,6 +5,7 @@ return {
         },
         event = { "BufReadPre", "BufNewFile" },
         config = function()
+
                 local lspconfig = require("lspconfig")
 
                 -- Individual server management
@@ -37,7 +38,7 @@ return {
                 })
 
                 -- jdtls
-                -- lspconfig.jdtls.setup({})
+                lspconfig.jdtls.setup({})
 
         end,
 
