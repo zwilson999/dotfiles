@@ -107,5 +107,14 @@ alias grep='grep --color=auto'
 # For STM32CubeMX
 alias st32cube="~/STM32CubeMX/STM32CubeMX"
 
+# For jdtls
+export PATH=$PATH:~/.local/share/nvim/mason/bin
+
+# For Java Intellij IDEA
+alias idea="/opt/idea-IC-233.14475.28/bin/idea.sh"
+
 # Will allow blinking box in terminal
 echo '\e[1 q'
+
+# Removes % EOL mark in the terminal
+export PROMPT_EOL_MARK=''

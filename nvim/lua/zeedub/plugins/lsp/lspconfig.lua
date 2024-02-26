@@ -38,7 +38,20 @@ return {
                 })
 
                 -- jdtls
-                lspconfig.jdtls.setup({})
+                lspconfig.jdtls.setup({
+                        settings = {
+                                java = {
+                                        configuration = {
+                                                runtimes = {
+                                                        {
+                                                                path = "/usr/lib/jvm/java-21-openjdk",
+                                                                default = true,
+                                                        }
+                                                }
+                                        }
+                                }
+                        }
+                })
 
         end,
 

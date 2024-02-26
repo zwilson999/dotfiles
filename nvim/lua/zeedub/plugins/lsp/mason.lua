@@ -49,7 +49,7 @@ return {
 --				{ "eslint_d" },
 --				{ "eslint-lsp" },
 				{ "codelldb" },
-                               { "jdtls" },
+                                -- { "jdtls" },
 			},
 
 			auto_update = true,
