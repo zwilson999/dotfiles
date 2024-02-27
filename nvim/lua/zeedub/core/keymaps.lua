@@ -56,6 +56,12 @@ map("n", "<Down>", "<Nop>", { noremap = true, silent = false })
 map("n", "<Left>", "<Nop>", { noremap = true, silent = false })
 map("n", "<Right>", "<Nop>", { noremap = true, silent = false })
 
+-- unmap arrow keys in insert mode
+map("i", "<Up>", "<Nop>", { noremap = true, silent = false })
+map("i", "<Down>", "<Nop>", { noremap = true, silent = false })
+map("i", "<Left>", "<Nop>", { noremap = true, silent = false })
+map("i", "<Right>", "<Nop>", { noremap = true, silent = false })
+
 -- make esc key easier
 map("i", "jj", "<Esc>", { noremap = true, silent = false })
 
