@@ -72,3 +72,9 @@ map("n", ":", ";", { noremap = true, silent = false })
 -- remap J and K to move faster on screen
 map("n", "K", "5k", { noremap = true, silent = false })
 map("n", "J", "5j", { noremap = true, silent = false })
+
+map("v", "K", "5k", { noremap = true, silent = false })
+map("v", "J", "5j", { noremap = true, silent = false })
+
+-- Toggle Nvim-tree
+map("n", "<leader>t", ":NvimTreeToggle<CR>", { noremap = true, silent = false })

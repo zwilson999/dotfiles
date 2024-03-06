@@ -17,7 +17,7 @@ return {
                                 },
                                 show_on_dirs = true,
                         },
-                       view = { signcolumn = 'yes' },
+                        view = { signcolumn = 'yes' },
                 })
         end,
 }
