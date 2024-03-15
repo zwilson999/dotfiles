@@ -39,6 +39,7 @@ map("n", "<A-7>", "<Cmd>BufferGoto 7<CR>", { silent = true })
 map("n", "<A-8>", "<Cmd>BufferGoto 8<CR>", { silent = true })
 map("n", "<A-9>", "<Cmd>BufferGoto 9<CR>", { silent = true })
 map("n", "<A-0>", "<Cmd>BufferLast<CR>", { silent = true })
+-- map("n", ";wq<CR>", "<Cmd>BufferWipeout<CR>", { silent = true })
 
 -- Will open a hover window for the function our cursor is over
 -- This will show documentation for the function
@@ -77,4 +78,27 @@ map("v", "K", "5k", { noremap = true, silent = false })
 map("v", "J", "5j", { noremap = true, silent = false })
 
 -- Toggle Nvim-tree
-map("n", "<leader>t", ":NvimTreeToggle<CR>", { noremap = true, silent = false })
+map("n", "<leader>e", ":NvimTreeToggle<CR>", { noremap = true, silent = false })
+
+-- Auto close nvim-tree
+-- local function is_modified_buffer_open(buffers)
+--     for _, v in pairs(buffers) do
+--         if v.name:match("NvimTree_") == nil then
+--             return true
+--         end
+--     end
+--     return false
+-- end
+--
+-- vim.api.nvim_create_autocmd("BufEnter", {
+--     nested = true,
+--     callback = function()
+--         if
+--             #vim.api.nvim_list_wins() == 1
+--             and vim.api.nvim_buf_get_name(0):match("NvimTree_") ~= nil
+--             and is_modified_buffer_open(vim.fn.getbufinfo({ bufmodified = 1 })) == false
+--         then
+--             vim.cmd("quit")
+--         end
+--     end,
+-- })

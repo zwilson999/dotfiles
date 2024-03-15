@@ -198,6 +198,9 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 # Launch reshift
 exec_always --no-startup-id redshift -x && redshift -O 4000
 
+# Shortcut for susspend
+bindsym $mod+Shift+s exec --no-startup-id systemctl suspend
+
 # Set desktop wallpaper with Nitrogen
 exec --no-startup-id nitrogen --set-auto ~/wallpapers/ALH3e4N.jpeg --head=0 && nitrogen --set-auto ~/wallpapers/ALH3e4N.jpeg --head=1
 

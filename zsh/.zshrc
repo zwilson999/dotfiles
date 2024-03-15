@@ -71,7 +71,12 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(
+        git 
+        zsh-autosuggestions
+        zsh-syntax-highlighting
+        zsh-vim-mode
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -118,3 +123,18 @@ echo '\e[1 q'
 
 # Removes % EOL mark in the terminal
 export PROMPT_EOL_MARK=''
+
+# Vi mode
+# bindkey -v
+
+# Styles prompt for vim mode from vim plugin
+MODE_INDICATOR_VIINS='%F{15}<%F{8}INSERT<%f'
+MODE_INDICATOR_VICMD='%F{10}<%F{2}NORMAL<%f'
+MODE_INDICATOR_REPLACE='%F{9}<%F{1}REPLACE<%f'
+MODE_INDICATOR_SEARCH='%F{13}<%F{5}SEARCH<%f'
+MODE_INDICATOR_VISUAL='%F{12}<%F{4}VISUAL<%f'
+MODE_INDICATOR_VLINE='%F{12}<%F{4}V-LINE<%f'
+
+setopt PROMPT_SUBST
+# Note the single quotes
+RPS1='${MODE_INDICATOR_PROMPT} ${vcs_info_msg_0_}'
