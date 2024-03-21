@@ -120,7 +120,7 @@ export PATH=$PATH:~/.local/share/nvim/mason/bin
 alias idea="/opt/idea-IC-233.14475.28/bin/idea.sh"
 
 # Will allow blinking box in terminal
-echo '\e[1 q'
+# echo '\e[1 q'
 
 # Removes % EOL mark in the terminal
 export PROMPT_EOL_MARK=''
@@ -148,3 +148,9 @@ export PROMPT_EOL_MARK=''
 # Note the single quotes
 # setopt PROMPT_SUBST
 # RPS1='${MODE_INDICATOR_PROMPT} ${vcs_info_msg_0_}'
+
+# Prompt editing for zsh-vi-mode
+ZVM_INSERT_MODE_CURSOR=$ZVM_CURSOR_BLINKING_BEAM
+ZVM_NORMAL_MODE_CURSOR=$ZVM_CURSOR_BLINKING_BLOCK
+ZVM_VISUAL_MODE_CURSOR=$ZVM_CURSOR_BLINKING_BLOCK
+
