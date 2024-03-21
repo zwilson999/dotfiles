@@ -1,34 +1,36 @@
 ### My Linux config dotfiles
-
 Configuration files for Linux. This currently includes:
 
-#### Shells
-bash/ \ 
-zsh/  \
+#### Shell configs
+bash/
+zsh/
 
 #### X11
-xorg/ \
+xorg/
 
 #### Window Managers and Bars
-i3/ \
-polybar/ \
+i3/
+polybar/
 
 #### Terminal Related things 
-st/ \
-tmux/ \
+st/
+tmux/
 
 #### Modal editors (mostly Vim)
-nvim/ \
-gvim/ \
-helix/ \
+nvim/
+gvim/
+helix/
 
 #### File managers
-ranger/ \
-rofi/ \ 
+ranger/
+rofi/
 
 #### Compositor
-picom/ \
+picom/
 
 #### Wallpapers and Configs
-wallpaper/ \
-nitrogen/ \
+wallpaper/
+nitrogen/
+
+#### Pacman (Arch btw) package list
+pacman/
